@@ -4,10 +4,10 @@ const soundFiles = [
     { name: 'Cheer', file: 'https://www.freesound.org/data/previews/348/348654_6970090-lq.mp3' },
     { name: 'Drum Roll', file: 'https://www.freesound.org/data/previews/368/368738_5121236-lq.mp3' },
     { name: 'Laugh', file: 'https://www.freesound.org/data/previews/150/150963_2530208-lq.mp3' },
-    // Add more sound URLs here up to 500 unique sounds if available
+    // Add more sound URLs here up to 250 unique sounds if available
 ];
 
-for (let i = soundFiles.length + 1; i <= 500; i++) {
+for (let i = soundFiles.length + 1; i <= 250; i++) {
     soundFiles.push({ name: `Sound Effect ${i}`, file: 'https://www.freesound.org/data/previews/459/459966_939774-lq.mp3' });
 }
 
