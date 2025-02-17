@@ -1,14 +1,20 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     margin: 0;
     padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: black;
+    color: white;
 }
 
 h1 {
-    color: white;
+    color: inherit;
 }
 
 .buttons {
@@ -26,4 +32,13 @@ button {
     color: white;
     border: none;
     border-radius: 5px;
+}
+
+#mode-toggle {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: grey;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
