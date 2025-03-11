@@ -3,13 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sound Board</title>
+    <title>Chat Site</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Sound Board</h1>
-    <button id="mode-toggle">Switch to Dark Mode</button>
-    <div id="sound-buttons" class="buttons"></div>
-    <script src="script.js"></script>
+    <div id="app">
+        <div id="login">
+            <h2>Login</h2>
+            <input type="email" id="loginEmail" placeholder="Email">
+            <input type="password" id="loginPassword" placeholder="Password">
+            <button onclick="login()">Login</button>
+        </div>
+        <div id="register">
+            <h2>Register</h2>
+            <input type="email" id="registerEmail" placeholder="Email">
+            <input type="password" id="registerPassword" placeholder="Password">
+            <button onclick="register()">Register</button>
+        </div>
+        <div id="chat" style="display: none;">
+            <h2>Chat</h2>
+            <div id="messages"></div>
+            <input type="text" id="messageInput" placeholder="Type a message">
+            <button onclick="sendMessage()">Send</button>
+            <div id="colorSchemeSelector">
+                <button onclick="changeColorScheme('light')">Light</button>
+                <button onclick="changeColorScheme('dark')">Dark</button>
+                <button onclick="changeColorScheme('blue')">Blue</button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
 </body>
 </html>
