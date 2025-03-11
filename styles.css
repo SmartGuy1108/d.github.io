@@ -9,14 +9,14 @@ body {
 }
 
 #app {
-    width: 300px;
+    width: 400px;
     padding: 20px;
     background-color: var(--card-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
 
-h2 {
+h2, h3 {
     margin-top: 0;
 }
 
@@ -36,10 +36,15 @@ button {
     border: none;
     border-radius: 3px;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 button:hover {
     background-color: var(--button-hover-background-color);
+}
+
+.auth-section {
+    margin-bottom: 20px;
 }
 
 #messages {
@@ -50,6 +55,10 @@ button:hover {
     padding: 10px;
     border-radius: 3px;
     background-color: var(--messages-background-color);
+}
+
+#user-info, #friends, #groups {
+    margin-bottom: 10px;
 }
 
 /* Color schemes */
