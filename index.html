@@ -3,49 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat Site</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Slope.io - Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="app">
-        <div id="login" class="auth-section">
-            <h2>Login</h2>
-            <input type="email" id="loginEmail" placeholder="Email">
-            <input type="password" id="loginPassword" placeholder="Password">
-            <button onclick="login()">Login</button>
-        </div>
-        <div id="register" class="auth-section">
-            <h2>Register</h2>
-            <input type="email" id="registerEmail" placeholder="Email">
-            <input type="password" id="registerPassword" placeholder="Password">
-            <button onclick="register()">Register</button>
-        </div>
-        <div id="chat" style="display: none;">
-            <h2>Chat</h2>
-            <div id="user-info">
-                <input type="text" id="username" placeholder="Username" onchange="changeUsername()">
-                <button onclick="logout()">Logout</button>
-            </div>
-            <div id="friends">
-                <h3>Friends</h3>
-                <ul id="friendList"></ul>
-            </div>
-            <div id="groups">
-                <h3>Groups</h3>
-                <input type="text" id="newGroupName" placeholder="New Group Name">
-                <button onclick="createGroup()">Create Group</button>
-                <ul id="groupList"></ul>
-            </div>
-            <div id="messages"></div>
-            <input type="text" id="messageInput" placeholder="Type a message">
-            <button onclick="sendMessage()">Send</button>
-            <div id="colorSchemeSelector">
-                <button onclick="changeColorScheme('light')">Light</button>
-                <button onclick="changeColorScheme('dark')">Dark</button>
-                <button onclick="changeColorScheme('blue')">Blue</button>
-            </div>
-        </div>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
     </div>
-    <script src="scripts.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
